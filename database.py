@@ -47,7 +47,8 @@ def populate_database():
         (23, ["57", "64"], False),
         (24, ["1004", "33"], True),
         (25, ["162139404 80148 1321399324 653188 1421396214 702618 1521393104 752048", "1008 1797092 48408867 1800 1156923"], False),
-        (26, ["103 248", "7768 20"], True)
+        (26, ["103 248", "7768 20"], True),
+        (27, ["10738 30730 37522 51277", "NAN"], True)
     ]
 
     with sqlite3.connect(DB_PATH) as conn:
@@ -126,7 +127,7 @@ if __name__ == "__main__":
     create_database()
     populate_database()
     
-    task = get_task(1, 1)
+    task = get_task(27, 1)
     if task:
         print(f"Найдено задание: {task}")
     else:

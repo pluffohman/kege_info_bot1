@@ -34,7 +34,7 @@ class VariantCallbackData(CallbackData, prefix="variant"):
 async def start_handler(message: Message):
     keyboard = InlineKeyboardBuilder()
 
-    for task_number in range(1, 27):
+    for task_number in range(1, 28):
         keyboard.button(
             text=f"{task_number}",
             callback_data=TaskCallbackData(task_number=task_number).pack()
