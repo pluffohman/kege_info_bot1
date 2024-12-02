@@ -9,7 +9,7 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 from database import create_database, populate_database, get_task
 
 
-BOT_TOKEN="8139783895:AAFwAdZYx6Fvsk3VZaK_j8ogi759x5319hw"
+BOT_TOKEN="token"
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
