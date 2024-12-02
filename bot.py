@@ -50,7 +50,7 @@ async def send_task(callback_query: CallbackQuery, callback_data: TaskCallbackDa
 
     for variant in [1, 2]:
         keyboard.button(
-            text=f"Вариант {variant}",
+            text=f"{variant}",
             callback_data=VariantCallbackData(task_number=task_number, variant=variant).pack()
         )
 
